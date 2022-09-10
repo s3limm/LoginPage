@@ -22,7 +22,7 @@ namespace Login_Page.Forms
 
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void buttonLogin_Click(object sender, EventArgs e)
         {
 
         }

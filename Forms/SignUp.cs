@@ -21,5 +21,16 @@ namespace Login_Page
         {
 
         }
+        private void btnSignUp_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnCreate_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        
     }
 }
