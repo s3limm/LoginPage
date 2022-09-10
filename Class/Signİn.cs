@@ -8,18 +8,17 @@ using System.Threading.Tasks;
 
 namespace Login_Page
 {
-    internal class Signup
+    internal class Signİn
     {
 
-        public Signup(string _username, string _password, string _mail)
+        public Signİn(string _username, string _password)
         {
             userName = _username;
             password = _password;
-            mail = _mail;
+           
         }
 
         public string userName { get; set; }
         public string password { get; set; }
-        public string mail { get; set; }
     }
 }

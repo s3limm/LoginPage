@@ -6,16 +6,17 @@ using System.Threading.Tasks;
 
 namespace Login_Page
 {
-    internal class Signİn
+    internal class Signup
     {
-        public Signİn(string _username, string _passWord)
+        public Signup(string _username, string _passWord, string _mail)
         {
             userName = _username;
             passWord = _passWord;
+            mail = _mail;
         }
 
         public string userName { get; set; }
         public string passWord { get; set; }
-
+        public string mail { get; set; }
     }
 }
