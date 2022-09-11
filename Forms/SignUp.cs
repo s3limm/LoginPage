@@ -13,7 +13,8 @@ namespace Login_Page
 {
     public partial class SignUp : Form
     {
-        Signup signUp;
+        Signup
+            signup = new Signup();
         public SignUp()
         {
             InitializeComponent();
@@ -30,12 +31,30 @@ namespace Login_Page
 
         private void btnCreate_Click(object sender, EventArgs e)
         {
-            signUp.userName = txtUserName.Text;
-            signUp.passWord = txtPassword.Text;
-            signUp.mail = txtMail.Text;
+            if (!string.IsNullOrEmpty(txtUserName.Text) && string.IsNullOrEmpty(txtPassword.Text))
+            {
+                MessageBox.Show("Lütfen bir şifre belirlyiniz.");
 
+            }
+            else if (!string.IsNullOrEmpty(txtUserName.Text) && !string.IsNullOrEmpty(txtPassword.Text) && string.IsNullOrEmpty(txtMail.Text))
+            {
+                MessageBox.Show("Lütfen mail adresinizi giriniz.");
+
+            }
+            else if (!string.IsNullOrEmpty(txtUserName.Text) && !string.IsNullOrEmpty(txtPassword.Text) && !string.IsNullOrEmpty(txtMail.Text))
+            {
+                signup.userName = txtUserName.Text;
+                signup.passWord = txtPassword.Text;
+                signup.mail = txtMail.Text;
+
+                MessageBox.Show($"Hoşgeldin sevgili {signup.userName}, \n Kayıdınız oluşturulmuştur isterseniz kullanıcı adı veya {signup.mail} adresiniz ile giriş yapabilirsiniz.");
+            }
+            else
+            {
+                MessageBox.Show("Lütfen tüm boşlukları doldurunuz.");
+            }
         }
 
-        
+
     }
 }
