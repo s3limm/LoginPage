@@ -13,8 +13,8 @@ namespace Login_Page
 {
     public partial class SignUp : Form
     {
-        Signup
-            signup = new Signup();
+        Signup signup = new Signup();
+        
         public SignUp()
         {
             InitializeComponent();
@@ -24,11 +24,6 @@ namespace Login_Page
         {
 
         }
-        private void btnSignUp_Click(object sender, EventArgs e)
-        {
-
-        }
-
         private void btnCreate_Click(object sender, EventArgs e)
         {
             if (!string.IsNullOrEmpty(txtUserName.Text) && string.IsNullOrEmpty(txtPassword.Text))
@@ -48,11 +43,20 @@ namespace Login_Page
                 signup.mail = txtMail.Text;
 
                 MessageBox.Show($"Hoşgeldin sevgili {signup.userName}, \n Kayıdınız oluşturulmuştur isterseniz kullanıcı adı veya {signup.mail} adresiniz ile giriş yapabilirsiniz.");
+
+                btnSignUp.Enabled = true;
             }
             else
             {
                 MessageBox.Show("Lütfen tüm boşlukları doldurunuz.");
             }
+        }
+
+        private void btnSignUp_Click(object sender, EventArgs e)
+        {
+
+            Signİn signİn = new Signİn();
+            this.Hide();
         }
 
 

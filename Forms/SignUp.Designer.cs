@@ -55,6 +55,7 @@
             // 
             this.btnSignUp.AutoEllipsis = true;
             this.btnSignUp.BackColor = System.Drawing.SystemColors.ControlLightLight;
+            this.btnSignUp.Enabled = false;
             this.btnSignUp.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnSignUp.Location = new System.Drawing.Point(413, 92);
             this.btnSignUp.Name = "btnSignUp";

@@ -6,9 +6,8 @@ using System.Threading.Tasks;
 
 namespace Login_Page
 {
-    internal class Signup
+    public class Signup
     {
-
         public string userName { get; set; }
         public string passWord { get; set; }
         public string mail { get; set; }
