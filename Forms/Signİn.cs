@@ -28,11 +28,11 @@ namespace Login_Page.Forms
             string User = txtSignİn.Text;
             string password = txtPassword.Text;
 
-            if((User == classSignUp.userName || User == classSignUp.mail) && password == classSignUp.passWord)
+            if ((User == classSignUp.userName || User == classSignUp.mail) && password == classSignUp.passWord)
             {
                 MessageBox.Show($"Hoşgeldiniz sevgili {classSignUp.userName}");
             }
-            else 
+            else
             {
                 MessageBox.Show("Hatalı giriş yaptınız lütfen bir daha deneyiniz");
                 txtSignİn.Text = "";
