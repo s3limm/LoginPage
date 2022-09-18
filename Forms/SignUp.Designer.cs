@@ -1,6 +1,6 @@
 ﻿namespace Login_Page
 {
-    partial class SignUp
+    partial class PageSignUp
     {
         /// <summary>
         /// Required designer variable.
@@ -138,7 +138,7 @@
             this.btnCreate.UseVisualStyleBackColor = false;
             this.btnCreate.Click += new System.EventHandler(this.btnCreate_Click);
             // 
-            // SignUp
+            // PageSignUp
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -152,7 +152,7 @@
             this.Controls.Add(this.txtUserName);
             this.Controls.Add(this.btnSignUp);
             this.Controls.Add(this.btnSignİn);
-            this.Name = "SignUp";
+            this.Name = "PageSignUp";
             this.Text = "Form1";
             this.Load += new System.EventHandler(this.SignUp_Load);
             this.ResumeLayout(false);
@@ -167,9 +167,9 @@
         private System.Windows.Forms.TextBox txtPassword;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox txtMail;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Button btnCreate;
+        public System.Windows.Forms.TextBox txtMail;
     }
 }
 

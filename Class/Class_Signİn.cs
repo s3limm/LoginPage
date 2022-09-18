@@ -8,13 +8,12 @@ using System.Threading.Tasks;
 
 namespace Login_Page
 {
-    public class Signİn
+    public class ClassSignİn
     {
 
-        public Signİn(string _username, string _password)
+        public ClassSignİn()
         {
-            userName = _username;
-            password = _password;
+           
            
         }
 

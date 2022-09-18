@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Login_Page.Forms;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -11,11 +12,11 @@ using System.Windows.Forms;
 
 namespace Login_Page
 {
-    public partial class SignUp : Form
+    public partial class PageSignUp : Form
     {
         Signup signup = new Signup();
         
-        public SignUp()
+        public PageSignUp()
         {
             InitializeComponent();
         }
@@ -50,13 +51,15 @@ namespace Login_Page
             {
                 MessageBox.Show("Lütfen tüm boşlukları doldurunuz.");
             }
+
         }
 
         private void btnSignUp_Click(object sender, EventArgs e)
         {
-
             Signİn signİn = new Signİn();
+            signİn.Show();
             this.Hide();
+          
         }
 
 

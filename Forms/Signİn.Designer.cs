@@ -95,6 +95,7 @@
             this.btnLogin.TabIndex = 3;
             this.btnLogin.Text = "Giriş";
             this.btnLogin.UseVisualStyleBackColor = false;
+            this.btnLogin.Click += new System.EventHandler(this.btnLogin_Click);
             // 
             // label1
             // 
