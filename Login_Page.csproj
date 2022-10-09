@@ -47,6 +47,10 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Class\Class_SignUp.cs" />
+<<<<<<< HEAD
+=======
+    <Compile Include="Class\Class_Signİn.cs" />
+>>>>>>> 3830ab84020b0668bf007dc5ac5c47fa87170201
     <Compile Include="Forms\SignUp.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -61,7 +65,10 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+<<<<<<< HEAD
     <Compile Include="Class\Class_Signİn.cs" />
+=======
+>>>>>>> 3830ab84020b0668bf007dc5ac5c47fa87170201
     <EmbeddedResource Include="Forms\SignUp.resx">
       <DependentUpon>SignUp.cs</DependentUpon>
     </EmbeddedResource>
